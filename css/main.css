@@ -8,6 +8,10 @@ img {
 	padding: 14px;
 }
 
+.corner-radius {
+	border-radius: 10px;
+}
+
 .zoom-logo {
 	width: 120px;
 	height: 120px;	
@@ -15,7 +19,6 @@ img {
 	margin-top: 25px;
 	margin-bottom: 25px;
 	background-color: rgb(39, 129, 255);
-	border-radius: 5px;
 }
 
 .zoom-logo img {
