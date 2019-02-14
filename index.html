@@ -37,26 +37,38 @@ style guide rules end -->
 <!-- here we use body tag to add custom classes to it, no need to close it, or account it in tags hierarchy  -->
 <body class="snt-body-bg">
 
-<!-- content -->
+<!-- navigation bar -->
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-        <a href="index.html" class="navbar-brand">snt.dashboard</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobileBtn" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">dashboard.sintezis</a>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="timetable.html">timetable</a></li>
-      <li><a href="https://wiki.sintezis.co/home/" target="_blank">wiki</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">projects <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">/fooc</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">login -></a></li>
-        </ul>
-      </li>
-    </ul>
+    
+    <div class="collapse navbar-collapse" id="mobileBtn">
+      <ul class="nav navbar-nav navbar-right">
+          <li class="nav-time"><a class="nav-link" href="timetable.html">timetable</a></li>
+          <li class="nav-time"><a class="nav-link" href="https://wiki.sintezis.co/home/" target="_blank">wiki</a></li>
+        <li class="nav-time dropdown">
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">projects <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">/fooc</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">login -></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </nav>
+
 <div class="snt-container container">
   <div class="row">
     <h2>Managment</h2>
